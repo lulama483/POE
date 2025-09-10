@@ -45,7 +45,7 @@ public class Part1_RegnLog {
             System.out.println("Celphone number incorrectly formatted or does not contain international code.");
         }
 
-        
+        System.out.println("Complete");
         
     
     }
