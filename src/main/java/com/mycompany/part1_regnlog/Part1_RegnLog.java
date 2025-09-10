@@ -47,6 +47,7 @@ public class Part1_RegnLog {
 
         System.out.println("Complete");
         System.out.println("exiting......");
+        System.out.println("hi");
     
     }
 }
