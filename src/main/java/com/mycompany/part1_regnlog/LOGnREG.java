@@ -9,11 +9,11 @@ package com.mycompany.part1_regnlog;
  * @author RC_Student_lab
  */
 public class LOGnREG {
-    
+    //username
      public  boolean validateUsername(String username) { //validate username
        return username.contains("_")&& username.length()<=5;
      }
-    
+    //password
     public boolean validatePassword(String password){ //valiate password
         boolean hasUppercase = false;
         boolean hasNumber = false;
