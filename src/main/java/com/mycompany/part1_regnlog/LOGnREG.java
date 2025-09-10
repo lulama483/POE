@@ -34,9 +34,10 @@ public class LOGnREG {
              }
             }
         return hasUppercase && hasNumber && hasSpecialChar;
+    }
+    
 
-      
-    
-}
-    
+    public boolean checkPhoneNumber(String cellphone){
+        return cellphone.startsWith("+27") && cellphone.length() == 11;
+    }
 }
