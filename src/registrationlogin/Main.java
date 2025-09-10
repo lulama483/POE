@@ -30,7 +30,7 @@ public class Main {
         //passsword
         System.out.print("Enter password (min 8 characters, at least one capital letter, one number, and one special character): ");
         String password = scanner.nextLine();
-        if(keys.)
+        if(keys.validatePassword(password))
 
         System.out.print("Enter South African cell phone number (format: +27xxxxxxxxx or 27xxxxxxxxx or 0xxxxxxxxx): ");
         String phoneNumber = scanner.nextLine();
@@ -39,23 +39,7 @@ public class Main {
 
     
 
-    private static boolean validatePassword(String password) {
-        String regex = "^(?=.[A-Z])(?=.\\d)(?=.[@$!%?&])[A-Za-z\\d@$!%*?&]{8,}$"; // Ensure password meets requirements
-        if (!Pattern.matches(regex, password)) {
-            System.out.println("Password is not correctly formatted; please ensure that the password contains at least eight characters; a capital letter, a number, and a special character.");
-            return false;
-        }
-        return true;
-    }
-
-    private static boolean validatePhoneNumber(String phoneNumber) {
-        String regex = "^\\+?27\\d{9}$"; // Basic South African phone number format
-        if (Pattern.matches(regex, phoneNumber)) {
-            System.out.println("");
-            return true;
-        }
-        return false;
-    
+       
     }
     
 }

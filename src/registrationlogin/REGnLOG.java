@@ -14,7 +14,7 @@ public class REGnLOG {
        return username.contains("_")&& username.length()<=5;
      }
     
-    public boolean validatePassword(String password){
+    public boolean validatePassword(String password){ //valiate password
         boolean hasUppercase = false;
         boolean hasNumber = false;
         boolean hasSpecialChar = false;
@@ -29,10 +29,14 @@ public class REGnLOG {
                 hasUppercase = true;
             }else if (Character.isDigit(c)){
                 hasNumber = true;
-                
+             }else if (!Character.isLetterOrDigit(c)){
+                 hasSpecialChar = true;
+             }
             }
-        }
-    }
+        return false;
+    
+}
+    
 }
 
 
