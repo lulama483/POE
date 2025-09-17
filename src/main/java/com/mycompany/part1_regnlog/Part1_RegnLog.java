@@ -14,6 +14,7 @@ public class Part1_RegnLog {
 
     public static void main(String[] args) {
       LOGnREG keys = new LOGnREG();
+      login obj = new login();
         Scanner scanner = new Scanner(System.in);
 
         //username
@@ -45,9 +46,7 @@ public class Part1_RegnLog {
             System.out.println("Celphone number incorrectly formatted or does not contain international code.");
         }
 
-        System.out.println("Complete");
-        System.out.println("exiting......");
-        System.out.println("hi");
+       
     
     }
 }
